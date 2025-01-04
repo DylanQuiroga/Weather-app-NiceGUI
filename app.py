@@ -1,8 +1,11 @@
 from nicegui import ui
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 API_URL = "https://api.openweathermap.org/data/2.5/weather"
-API_KEY = "API_KEY"  # Aquí va tu clave de la API, obtenida en https://openweathermap.org/current
+API_KEY = os.getenv("API_KEY")          # Aquí va tu clave de la API, obtenida en https://openweathermap.org/current
 
 def fetch_weather():
     """Consulta la API con la ciudad ingresada por el usuario y actualiza la interfaz."""
