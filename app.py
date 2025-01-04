@@ -81,4 +81,6 @@ wind_label = ui.html("")
 wind_label.visible = False
 
 # Ejecutar en modo escritorio
-ui.run(native=True, title="Clima en tu ciudad", fullscreen=False, window_size=(300, 550))
+# ui.run(native=True, title="Clima en tu ciudad", fullscreen=False, window_size=(300, 550))
+
+ui.run()
